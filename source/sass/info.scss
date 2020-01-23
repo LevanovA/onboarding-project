@@ -1,4 +1,48 @@
 .info {
   display: flex;
-  width: 1411px;
+  font-family: "PTMono", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  max-width: 1415px;
+  margin-bottom: 173px;
+}
+
+.info__logo {
+  height: 52px;
+}
+
+.info__contact {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 74vw * 0.39;
+}
+
+.info__email {
+  display: flex;
+}
+
+.info__phone {
+  display: flex;
+  margin-left: 74vw * 0.06;
+}
+
+.info__email-img {
+  width: 19px;
+  height: 14px;
+  margin-top: 2px;
+  margin-right: 20px;
+  background-image: url(../img/info-mail.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 14px;
+}
+
+.info__phone-img {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  margin-right: 16px;
+  background-image: url(../img/info-phone.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
 }

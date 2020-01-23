@@ -1,0 +1,17 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PTMono";
+  font-display: swap;
+
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+
+  src: url("../fonts/RobotoCondensedBold.woff2") format("woff2"), url("../fonts/robotoCondensedBold.woff") format("woff");
+}

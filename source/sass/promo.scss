@@ -1,0 +1,55 @@
+.promo {
+  max-width: 1494px;
+  padding-top: 58px;
+  padding-bottom: 25px;
+  background-image: url(../img/promo-desktop.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.promo__headline {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.promo__call {
+  position: relative;
+  font-family: "PTMono", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  color: #FFFFFF;
+  width: 683px;
+  margin: 0;
+  margin-left: 95px;
+  margin-bottom: 43px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 2px;
+    left: -94px;
+    top: 16px;
+    background: #FFFFFF;
+  }
+}
+
+.promo__scroll {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "PTMono", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin-left: -36px;
+  transform: rotate(-90deg);
+}
