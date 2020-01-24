@@ -3,7 +3,7 @@
   font-family: "PTMono", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
-  color: #ffffff;
+  color: $main-color;
   max-width: 1415px;
   margin-bottom: 173px;
 }
@@ -45,4 +45,41 @@
   background-image: url(../img/info-phone.svg);
   background-repeat: no-repeat;
   background-size: 18px 18px;
+}
+
+@media (max-width: $tablet-width) {
+
+  .info {
+    justify-content: space-between;
+    max-width: 720px;
+    margin-bottom: 4px;
+  }
+
+  .info__email-img {
+    width: 25px;
+    height: 19px;
+    margin-top: 0;
+    margin-right: 0;
+    background-size: 25px 19px;
+  }
+
+  .info__email-text {
+    display: none;
+  }
+
+  .info__phone {
+    margin-left: 96vw * 0.05;
+  }
+
+  .info__phone-img {
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    margin-right: 0;
+    background-size: 24px 24px;
+  }
+
+  .info__phone-number {
+    display: none;
+  }
 }

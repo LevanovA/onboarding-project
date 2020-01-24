@@ -2,11 +2,24 @@
   padding-top: 33px;
   padding-bottom: 103px;
   background-color: #1B2D37;
-  background-image: url(../img/promo-mask-desktop.png), url(../img/promo-polygon-desktop.png);
-  background-repeat: no-repeat, no-repeat;
+  background-image: url(../img/promo-mask-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-header__box {
   max-width: 1494px;
   margin: 0 auto;
+}
+
+@media (max-width: $tablet-width) {
+
+  .page-header {
+    padding-bottom: 137px;
+  }
+
+  .page-header__box {
+    max-width: 1023;
+    margin-left: 100vw * 0.04;
+  }
 }

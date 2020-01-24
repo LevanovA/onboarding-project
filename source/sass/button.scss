@@ -4,13 +4,14 @@
   font-family: "Roboto Condensed", Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
-  color: #ffffff;
+  color: $main-color;
   letter-spacing: 0.05em;
   background-color: rgba(27, 45, 55, 0);
-  border: 1px solid #FFFFFF;
+  border: 1px solid $main-color;
   box-sizing: border-box;
   border-radius: 5px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button--info {
@@ -30,5 +31,19 @@
   margin-bottom: 130px;
   padding-top: 17px;
   border: none;
-  background-color: #00B2FF;
+  background-color: $complementary-color;
+}
+
+@media (max-width: $tablet-width) {
+
+  .button--info {
+    display: none;
+  }
+
+  .button--promo {
+    width: 379px;
+    margin-left: 113px;
+    margin-bottom: 0;
+    padding-top: 17px;
+  }
 }
