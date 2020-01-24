@@ -34,6 +34,10 @@
   background-color: $complementary-color;
 }
 
+.button--promo-mobile {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
 
   .button--info {
@@ -44,6 +48,21 @@
     width: 379px;
     margin-left: 113px;
     margin-bottom: 0;
-    padding-top: 17px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .button--promo {
+    width: 90vw;
+    margin: 0;
+  }
+
+  .button--promo-mobile {
+    display: inline;
+  }
+
+  .button--promo-desktop {
+    display: none;
   }
 }

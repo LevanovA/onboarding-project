@@ -69,7 +69,6 @@
   .promo__headline {
     font-size: 60px;
     line-height: 70px;
-    letter-spacing: 0.07em;
     width: 470px;
     margin: 0;
     margin-bottom: 28px;
@@ -92,5 +91,40 @@
 
   .promo__scroll {
     display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .promo {
+    background-image: url(../img/promo-mobile.png), url(../img/promo-polygon-mobile.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: right;
+    background-position-y: 23px,-69px;
+    max-width: 766px;
+    padding-top: 217px;
+  }
+
+  .promo__headline {
+    font-size: 40px;
+    line-height: 47px;
+    width: 277px;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  .promo__call {
+    font-size: 16px;
+    line-height: 24px;
+    width: 245px;
+    margin: 0;
+    margin-left: 49px;
+    margin-bottom: 42px;
+
+    &::before {
+      width: 33px;
+      left: -47px;
+      top: 14px;
+    }
   }
 }

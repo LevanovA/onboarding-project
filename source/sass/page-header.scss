@@ -23,3 +23,15 @@
     margin-left: 100vw * 0.04;
   }
 }
+
+@media (max-width: $mobile-width) {
+
+  .page-header {
+    padding-bottom: 45px;
+  }
+
+  .page-header__box {
+    max-width: 766px;
+    margin-left: 100vw * 0.05;
+  }
+}

@@ -12,7 +12,10 @@
     <div class="page-header__box">
       <section class="info">
         <a class="info__logo" href="index.html">
-          <img class="info__logo-picture" src="img/logo-desktop.svg" alt="Логотип компании" width="202" height="52">
+          <picture>
+            <source media="(max-width: 766px)" srcset="img/info-logo-mobile.svg">
+            <img class="info__logo-picture" src="img/logo-desktop.svg" alt="Логотип компании" width="202" height="52">
+          </picture>
         </a>
         <div class="info__contact">
           <p class="info__email"><span class="info__email-img"></span><span class="info__email-text">info@sd.ru</span></p>
@@ -23,7 +26,7 @@
       <section class="promo">
         <h1 class="promo__headline">Печатные платы</h1>
         <p class="promo__call">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="button button--promo" href="#">Получить бесплатную консультацию</a>
+        <a class="button button--promo" href="#"><span class="button--promo-desktop">Получить бесплатную консультацию</span><span class="button--promo-mobile">Бесплатная консультация</span></a>
         <a class="promo__scroll" href="#">Скролл вниз</a>
       </section>
     </div>
