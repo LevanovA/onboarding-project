@@ -1,0 +1,142 @@
+.about {
+  // position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 220px;
+  //   height: 317px;
+  //   left: -30px;
+  //   top: 0;
+  //   background-image: url(../img/date.png);
+  // }
+}
+
+.about__date {
+  width: 220px;
+  height: 317px;
+  margin-left: -30px;
+  background-image: url(../img/date.png);
+  background-repeat: no-repeat;
+}
+
+.about__container {
+  width: 1070px;
+}
+
+.about__headline {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+  margin: 0;
+  // margin-left: 177px;
+  margin-bottom: 21px;
+}
+
+.about__box {
+  margin-bottom: 38px;
+}
+
+.about__description{
+  font-family: "PTMono", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+  margin: 0;
+  // margin-left: 177px;
+  margin-bottom: 21px;
+}
+
+.about__space {
+  display: none;
+}
+
+.about__ellipsis {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+
+  .about {
+    width: 93vw;
+
+    // &::before {
+    //   width: 251px;
+    //   height: 362px;
+    //   background-size: 251px, 362px;
+    // }
+  }
+
+  .about__date {
+    width: 251px;
+    height: 362px;
+    background-size: 251px, 362px;
+  }
+
+  .about__container {
+    width: 532px;
+  }
+
+  // .about__headline {
+  //   margin-left: 190px;
+  // }
+
+  .about__description {
+    width: 532px;
+    height: 90px;
+    overflow: hidden;
+    margin-bottom: 0;
+    // margin-left: 26vw;
+  }
+
+  .about__space {
+    display: inline;
+  }
+
+  .about__nbspace {
+    display: none;
+  }
+
+  .about__ellipsis {
+    display: inline;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .about {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  .about__date {
+    display: none;
+  }
+
+  .about__container {
+    width: 290px;
+  }
+
+  .about__headline {
+    font-size: 28px;
+    line-height: 42px;
+    margin-bottom: 21px;
+  }
+
+  .about__description {
+    width: 290px;
+    height: 174px;
+  }
+
+  .about__box {
+    margin-bottom: 30px;
+  }
+}
+

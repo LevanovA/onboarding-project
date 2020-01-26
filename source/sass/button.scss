@@ -38,6 +38,16 @@
   display: none;
 }
 
+.button--about {
+  display: block;
+  color: $complementary-color;
+  border: 1px solid $complementary-color;
+  text-align: center;
+  padding-top: 14px;
+  text-decoration: none;
+  // margin-left: 177px;
+}
+
 @media (max-width: $tablet-width) {
 
   .button--info {
@@ -49,6 +59,10 @@
     margin-left: 113px;
     margin-bottom: 0;
   }
+
+  // .button--about {
+  //   margin-left: 190px;
+  // }
 }
 
 @media (max-width: $mobile-width) {

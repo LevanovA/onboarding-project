@@ -1,0 +1,138 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 78px;
+}
+
+.advantages__item {
+  width: 570px;
+  min-height: 299px;
+  margin-bottom: 30px;
+  background: $main-color;
+  border: 1px solid #EBEBEB;
+  border-left: 3px solid $complementary-color;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:hover {
+    background: $complementary-color;
+    border: 1px solid $complementary-color;
+  }
+
+  &:hover .advantages__headline {
+    color: $main-color;
+  }
+
+  &:hover .advantages__description {
+    color: $main-color;
+  }
+
+  &:hover .advantages__svg {
+    fill: $main-color;
+  }
+}
+
+.advantages__svg {
+  fill: $complementary-color;
+  margin-left: 45px;
+  margin-top: 40px;
+}
+
+.advantages__headline {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  color: $complementary-color;
+  margin: 0;
+  margin-left: 45px;
+  margin-top: 23px;
+  margin-bottom: 15px;
+}
+
+.advantages__description {
+  position: relative;
+  font-family: "PTMono", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+  width: 483px;
+  margin: 0;
+  margin-left: 45px;
+}
+
+.advantages__nbspace {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+
+  .advantages {
+    width: 94vw;
+    margin-bottom: 24px;
+  }
+
+  .advantages__item {
+    width: 345px;
+    min-height: 232px;
+    margin-bottom: 30px;
+  }
+
+  .advantages__svg {
+    margin-left: 27px;
+    margin-top: 21px;
+  }
+
+  .advantages__headline {
+    margin-left: 27px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  .advantages__description {
+    width: 293px;
+    margin: 0;
+    margin-left: 27px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .advantages {
+    display: block;
+    width: 91vw;
+    margin-bottom: 40px;
+  }
+
+  .advantages__item {
+    width: 290px;
+    min-height: 232px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .advantages__svg {
+    margin-left: 22px;
+    margin-top: 24px;
+  }
+
+  .advantages__headline {
+    width: 245px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 22px;
+  }
+
+  .advantages__description {
+    width: 250px;
+    margin-left: 22px;
+    margin-bottom: 25px;
+  }
+
+  .advantages__nbspace {
+    display: inline;
+  }
+}

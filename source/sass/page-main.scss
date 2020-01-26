@@ -1,0 +1,35 @@
+.page-main__box {
+  padding-top: 109px;
+  padding-bottom: 100px;
+  background-color: $main-color;
+  background-image: url(../img/main-polygon-center.png), url(../img/main-polygon-topleft.png), url(../img/main-polygon-bottomleft.png), url(../img/main-polygon-right.png);
+  background-repeat: no-repeat;
+  background-position-x: 550px, 200px, 0, 800px, 1530px;
+  background-position-y: 145px, 50px, 450px, 130px, 400px;
+}
+
+@media (max-width: $tablet-width) {
+
+  .page-main__box {
+    padding-top: 55px;
+    padding-bottom: 80px;
+    background: none;
+    background-image: url(../img/main-polygon-tablet.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 95px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .page-main__box {
+    padding-top: 38px;
+    padding-bottom: 65px;
+    background: none;
+    background-image: url(../img/main-polygon-mobile.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 635px;
+  }
+}
