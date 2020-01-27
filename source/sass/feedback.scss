@@ -1,0 +1,239 @@
+.feedback {
+  padding-top: 91px;
+  padding-bottom: 113px;
+  background-color: $complementary-color;
+  background-image: url(../img/feedback-plane-desktop.png), url(../img/feedback-polygon-desktop.png);
+  background-repeat: no-repeat;
+  background-position-x: 342px, 167px;
+  background-position-y: 161px, -60px;
+}
+
+.feedback__box {
+  display: flex;
+  justify-content: flex-end;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.feedback__container {
+  width: 570px;
+}
+
+.feedback__container h2 {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  color: $main-color;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.feedback__container p {
+  font-family: "PTMono", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $main-color;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.feedback__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback__item input {
+  width: 270px;
+  height: 50px;
+  padding-left: 17px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  background-color: #19baff;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    font-family: "PTMono", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: $main-color;
+  }
+}
+
+.feedback__comment {
+  width: 100%;
+}
+
+.feedback__comment textarea {
+  width: 100%;
+  height: 154px;
+  box-sizing: border-box;
+  padding-left: 17px;
+  padding-top: 13px;
+  margin-bottom: 40px;
+  background-color: #19baff;
+  border: none;
+  outline: none;
+  resize: none;
+
+  &::placeholder {
+    font-family: "PTMono", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: $main-color;
+  }
+}
+
+.feedback__form input[type="button"] {
+  width: 270px;
+  height: 45px;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $main-color;
+  letter-spacing: 0.05em;
+  background-color: rgba(27, 45, 55, 0);
+  border: 1px solid $main-color;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.feedback__submit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feedback__agree {
+  width: 230px;
+  padding-top: 5px;
+}
+
+.feedback__agree label {
+  position: relative;
+  font-family: "PTMono", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: $main-color;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.feedback__agree input + label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  left: -32px;
+  border: 1px solid $main-color;
+  box-sizing: border-box;
+}
+
+.feedback__agree input:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 5px;
+    left: -27px;
+    top: 6px;
+    border: 1px solid $main-color;
+    border-right: 1px solid $complementary-color;
+    border-top: 1px solid $complementary-color;
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+@media (max-width: $tablet-width) {
+
+  .feedback {
+    padding-top: 82px;
+    padding-bottom: 104px;
+    background-image: none;
+  }
+
+  .feedback__box {
+    justify-content: center;
+    width: 590px;
+  }
+
+  .feedback__container {
+    width: 590px;
+  }
+
+  .feedback__container h2 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 15px;
+  }
+
+  .feedback__container p {
+    margin-bottom: 54px;
+  }
+
+  .feedback__item input {
+    width: 279px;
+  }
+
+  .feedback__comment textarea {
+    height: 160px;
+    margin-bottom: 44px;
+  }
+
+  .feedback__form input[type="button"] {
+    width: 280px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .feedback {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .feedback__box {
+    width: 290px;
+  }
+
+  .feedback__container {
+    width: 290px;
+  }
+
+  .feedback__container h2 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 11px;
+  }
+
+  .feedback__container p {
+    margin-bottom: 25px;
+  }
+
+  .feedback__item input {
+    min-width: 290px;
+    margin-bottom: 32px;
+  }
+
+  .feedback__comment textarea {
+    height: 104px;
+    margin-bottom: 27px;
+  }
+
+  .feedback__agree {
+    padding-left: 32px;
+  }
+
+  .feedback__submit {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .feedback__form input[type="button"] {
+    min-width: 290px;
+    margin-bottom: 24px;
+  }
+}
+
