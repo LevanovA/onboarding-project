@@ -53,6 +53,10 @@
   opacity: 0.5;
   margin-left: -36px;
   transform: rotate(-90deg);
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 @media (max-width: $tablet-width) {

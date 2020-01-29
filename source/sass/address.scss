@@ -1,0 +1,48 @@
+.address h3 {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1B2D37;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.address ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.address li {
+  font-family: "PTMono", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1B2D37;
+  opacity: 0.5;
+}
+
+@media (max-width: $mobile-width) {
+
+  .address {
+    position: relative;
+    padding-top: 29px;
+  }
+
+  .address h3 {
+    max-width: 290px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .address ul {
+    max-width: 290px;
+    margin: 0 auto;
+    padding-bottom: 27px;
+  }
+
+  .address li:first-child {
+    width: 200px;
+  }
+}

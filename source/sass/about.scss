@@ -1,19 +1,8 @@
 .about {
-  // position: relative;
   display: flex;
   justify-content: space-between;
   width: 1170px;
   margin: 0 auto;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 220px;
-  //   height: 317px;
-  //   left: -30px;
-  //   top: 0;
-  //   background-image: url(../img/date.png);
-  // }
 }
 
 .about__date {
@@ -31,10 +20,10 @@
 .about__headline {
   font-family: "Roboto Condensed", Arial, sans-serif;
   font-size: 36px;
+  font-weight: normal;
   line-height: 51px;
   color: #666666;
   margin: 0;
-  // margin-left: 177px;
   margin-bottom: 21px;
 }
 
@@ -50,7 +39,6 @@
   line-height: 22px;
   color: #666666;
   margin: 0;
-  // margin-left: 177px;
   margin-bottom: 21px;
 }
 
@@ -66,12 +54,6 @@
 
   .about {
     width: 93vw;
-
-    // &::before {
-    //   width: 251px;
-    //   height: 362px;
-    //   background-size: 251px, 362px;
-    // }
   }
 
   .about__date {
@@ -84,15 +66,10 @@
     width: 532px;
   }
 
-  // .about__headline {
-  //   margin-left: 190px;
-  // }
-
   .about__description {
     width: 532px;
     height: 90px;
     overflow: hidden;
-    // margin-left: 26vw;
   }
 
   .about__space {

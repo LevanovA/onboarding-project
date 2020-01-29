@@ -56,12 +56,13 @@
       <section class="promo">
         <h1 class="promo__headline">Печатные платы</h1>
         <p class="promo__call">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="button button--promo" href="#"><span class="button--promo-desktop">Получить бесплатную консультацию</span><span class="button--promo-mobile">Бесплатная консультация</span></a>
-        <a class="promo__scroll" href="#">Скролл вниз</a>
+        <a class="button button--promo" href="#feedback__link"><span class="button--promo-desktop">Получить бесплатную консультацию</span><span class="button--promo-mobile">Бесплатная консультация</span></a>
+        <a class="promo__scroll" href="#page-main__advantages">Скролл вниз</a>
       </section>
     </div>
   </header>
   <main class="page-main">
+    <a name="page-main__advantages"></a>
     <div class="page-main__box">
       <section class="advantages">
         <div class="advantages__item">
@@ -131,20 +132,36 @@
         <div class="services__box">
           <a class="services__item services__item--production" href="#">
             <p class="services__name">Производство печатных плат</p>
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/services-production-mobile.jpg">
+              <source media="(max-width: 1023px)" srcset="img/services-production-tablet.jpg">
+              <img src="./img/services-production.jpg" alt="Производство печатных плат" width="370" height="620">
+            </picture>
             <span class="services__button"></span>
           </a>
           <a class="services__item services__item--mounting" href="#">
             <p class="services__name">Монтаж печатных плат</p>
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/services-mounting-mobile.jpg">
+              <source media="(max-width: 1023px)" srcset="img/services-mounting-tablet.jpg">
+              <img src="./img/services-mounting.jpg" alt="Монтаж печатных плат" width="370" height="620">
+            </picture>
             <span class="services__button"></a>
           </a>
           <a class="services__item services__item--component" href="#">
             <p class="services__name">Комплектующие для светотехники</p>
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/services-component-mobile.jpg">
+              <source media="(max-width: 1023px)" srcset="img/services-component-tablet.jpg">
+              <img src="./img/services-component.jpg" alt="Комплектующие для светотехники" width="370" height="620">
+            </picture>
             <span class="services__button"></span>
           </a>
         </div>
       </div>
     </section>
     <section class="feedback">
+      <a name="feedback__link"></a>
       <div class="feedback__box">
         <div class="feedback__container">
           <h2>Остались вопросы? Задайте их нам!</h2>
@@ -154,7 +171,7 @@
               <input type="text" placeholder="Имя">
             </div>
             <div class="feedback__item feedback__item--tel">
-              <input type="tel" placeholder="Телефон">
+              <input type="tel" placeholder="Телефон" minlength="12" maxlength="12">
             </div>
             <div class="feedback__comment">
               <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
@@ -163,7 +180,7 @@
               <input type="button" value="Задать вопрос">
               <div class="feedback__agree">
                 <input type="checkbox" name="agree" id="agree" class="visually-hidden" checked>
-                <label for="agree" for="agree">Я согласен на обработку персональных данных</label>
+                <label for="agree">Я согласен на обработку персональных данных</label>
               </div>
             </div>
           </form>
@@ -172,7 +189,83 @@
     </section>
   </main>
   <footer class="page-footer">
-    
+    <div class="page-footer__box">
+      <section class="social">
+        <div class="social__container">
+          <a class="social__logo" href="index.html">
+            <img src="img/logo-desktop-f.svg" alt="Логотип компании" width="202" height="52">
+          </a>
+          <p>1999-2018 SD Service Devices</p>
+          <div class="social__box">
+            <a href="#" class="social__icon social__icon--fb"></a>
+            <a href="#" class="social__icon social__icon--od"></a>
+            <a href="#" class="social__icon social__icon--vk"></a>
+          </div>
+        </div>
+      </section>
+      <div class="page-footer__container">
+        <nav class="footer-menu toggle--closed">
+          <h3>Разделы сайта</h3>
+          <button class="toggle toggle--menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul>
+            <div class="footer-menu__box">
+              <li>О компании</li>
+              <li>Продукты</li>
+              <li>Производство печатных плат</li>
+              <li>Монтаж печатных плат</li>
+            </div>
+            <div class="footer-menu__box">
+              <li>Комплектующие</li>
+              <li>Доставка</li>
+              <li>Контакты</li>
+            </div>
+          </ul>
+        </nav>
+        <section class="address toggle--closed">
+          <h3>Наш офис</h3>
+          <button class="toggle toggle--address" type="button"><span class="visually-hidden">Открыть адрес и телефоны</span></button>
+          <ul>
+            <li>г. Мытищи, Олимпийский проспект, д.10</li>
+            <li>+7 (495) 589-40-50</li>
+            <li>+7 (925) 003-87-67</li>
+            <li>+7 (926) 926-080-79</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <section class="rights">
+      <div class="rights__box">
+        <p>Все права защищены</p>
+        <p>Условия конфиденциальности</p>
+        <p>Developed by wow studio</p>
+      </div>
+    </section>
   </footer>
+  <section class="modal modal--closed">
+    <div class="modal__box">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form class="modal__form" action="#">
+        <div class="modal__item modal__item--name">
+          <input type="text" placeholder="Имя">
+        </div>
+        <div class="modal__item modal__item--tel">
+          <input type="tel" placeholder="Телефон" minlength="12" maxlength="12">
+        </div>
+        <div class="modal__comment">
+          <textarea name="modal__comment" id="modal__comment" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <input type="button" value="Отправить">
+        <div class="modal__agree">
+          <input type="checkbox" name="modal__agree" id="modal__agree" class="visually-hidden" checked>
+          <label for="modal__agree">Я согласен на обработку персональных данных</label>
+        </div>
+      </form>
+      <button class="modal__button" type="button"></button>
+    </div>
+  </section>
+  <div class="overlay overlay--closed"></div>
+  <script src="./js/accordion.js"></script>
+  <script src="./js/modal.js"></script>
 </body>
 </html>

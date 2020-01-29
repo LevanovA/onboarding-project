@@ -17,6 +17,11 @@
 .button--info {
   margin-left: 2.6vw;
   margin-top: 3px;
+
+  &:hover {
+    color: $complementary-color;
+    background-color: $main-color;
+  }
 }
 
 .button--promo {
@@ -32,6 +37,11 @@
   padding-top: 17px;
   border: none;
   background-color: $complementary-color;
+
+  &:hover {
+    color: $complementary-color;
+    background-color: $main-color;
+  }
 }
 
 .button--promo-mobile {
@@ -45,24 +55,12 @@
   text-align: center;
   padding-top: 14px;
   text-decoration: none;
-  // margin-left: 177px;
-}
 
-// .button--feedback input {
-//   width: 270px;
-//   height: 45px;
-//   font-family: "Roboto Condensed", Arial, sans-serif;
-//   font-size: 14px;
-//   line-height: 16px;
-//   color: $main-color;
-//   letter-spacing: 0.05em;
-//   background-color: rgba(27, 45, 55, 0);
-//   border: 1px solid $main-color;
-//   box-sizing: border-box;
-//   border-radius: 5px;
-//   text-transform: uppercase;
-//   cursor: pointer;
-// }
+  &:hover {
+    color: $main-color;
+    background-color: $complementary-color;
+  }
+}
 
 @media (max-width: $tablet-width) {
 
@@ -75,10 +73,6 @@
     margin-left: 113px;
     margin-bottom: 0;
   }
-
-  // .button--about {
-  //   margin-left: 190px;
-  // }
 }
 
 @media (max-width: $mobile-width) {

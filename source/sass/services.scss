@@ -12,6 +12,7 @@
 .services__headline {
   font-family: "Roboto Condensed", Arial, sans-serif;
   font-size: 36px;
+  font-weight: normal;
   line-height: 51px;
   color: $main-color;
   margin: 0;
@@ -20,6 +21,7 @@
 
 .services__box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -28,9 +30,12 @@
   justify-content: space-between;
   width: 370px;
   height: 620px;
-  background-image: url(../img/services-production.jpg);
-  background-repeat: no-repeat;
   text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.services__item img {
+  opacity: 0.2;
 }
 
 .services__name {
@@ -41,6 +46,7 @@
   width: 160px;
   margin-left: 45px;
   margin-top: 50px;
+  margin-right: -230px;
 }
 
 .services__button {
@@ -48,6 +54,7 @@
   align-self: flex-end;
   width: 63px;
   height: 63px;
+  margin-left: -90px;
   background-color: $complementary-color;
 
   &::before {
@@ -93,7 +100,11 @@
     width: 715px;
     height: 256px;
     margin-bottom: 45px;
-    background-image: url(../img/services-production-tablet.jpg);
+  }
+
+  .services__item img {
+    width: 715px;
+    height: 256px;
   }
 
   .services__name {
@@ -122,11 +133,16 @@
     width: 290px;
     height: 256px;
     margin-bottom: 30px;
-    background-image: url(../img/services-production-mobile.jpg);
+  }
+
+  .services__item img{
+    width: 290px;
+    height: 256px;
   }
 
   .services__name {
     margin-left: 30px;
     margin-top: 20px;
+    margin-right: -220px;
   }
 }
