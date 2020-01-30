@@ -48,8 +48,8 @@
           </picture>
         </a>
         <div class="info__contact">
-          <p class="info__email"><span class="info__email-img"></span><span class="info__email-text">info@sd.ru</span></p>
-          <p class="info__phone"><span class="info__phone-img"></span><span class="info__phone-number">+7 (495) 000 52 52</span></p>
+          <p class="info__email"><a href="mailto:info@sd.ru" class="info__email-img"></a><span class="info__email-text">info@sd.ru</span></p>
+          <p class="info__phone"><a href="tel:+74950005252" class="info__phone-img"></a><span class="info__phone-number">+7 (495) 000 52 52</span></p>
           <button class="button button--info" type="button">Заказать звонок</button>
         </div>
       </section>
@@ -62,7 +62,7 @@
     </div>
   </header>
   <main class="page-main">
-    <a name="page-main__advantages"></a>
+    <a name="page-main__advantages" id="page-main__advantages"></a>
     <div class="page-main__box">
       <section class="advantages">
         <div class="advantages__item">
@@ -161,17 +161,17 @@
       </div>
     </section>
     <section class="feedback">
-      <a name="feedback__link"></a>
+      <a name="feedback__link" id="feedback__link"></a>
       <div class="feedback__box">
         <div class="feedback__container">
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form class="feedback__form" action="#" method="POST">
             <div class="feedback__item feedback__item--name">
-              <input type="text" placeholder="Имя">
+              <input type="text" placeholder="Имя"  id="feedbackName">
             </div>
             <div class="feedback__item feedback__item--tel">
-              <input type="tel" placeholder="Телефон" minlength="12" maxlength="12">
+              <input type="tel" placeholder="Телефон">
             </div>
             <div class="feedback__comment">
               <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
@@ -250,7 +250,7 @@
           <input type="text" placeholder="Имя">
         </div>
         <div class="modal__item modal__item--tel">
-          <input type="tel" placeholder="Телефон" minlength="12" maxlength="12">
+          <input type="tel" placeholder="Телефон">
         </div>
         <div class="modal__comment">
           <textarea name="modal__comment" id="modal__comment" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
@@ -265,6 +265,39 @@
     </div>
   </section>
   <div class="overlay overlay--closed"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/jquery.inputmask.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('.feedback__item--tel input').inputmask("+7 (999) 999-99-99");
+    $('.modal__item--tel input').inputmask("+7 (999) 999-99-99");
+    });
+
+    var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
+        V = 1/4;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+    for (var i = 0; i < linkNav.length; i++) {
+        linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
+            e.preventDefault(); //отменяем стандартное поведение
+            var w = window.pageYOffset,  // производим прокрутка прокрутка
+                hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
+            t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
+                start = null;
+            requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
+            function step(time) {
+                if (start === null) start = time;
+                var progress = time - start,
+                    r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+                window.scrollTo(0,r);
+                if (r != w + t) {
+                    requestAnimationFrame(step)
+                } else {
+                    location.hash = hash  // URL с хэшем
+                }
+            }
+        }, false);
+    }
+  </script>
+  <script src="./js/localst.js"></script>
   <script src="./js/accordion.js"></script>
   <script src="./js/modal.js"></script>
 </body>
