@@ -18,6 +18,10 @@
   width: 1055px;
 }
 
+.page-footer__line {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
 
   .page-footer {
@@ -51,5 +55,13 @@
     display: block;
     width: 100%;
     padding-top: 0;
+  }
+
+  .page-footer__line {
+    display: block;
+    margin: 0;
+    height: 1px;
+    border: none;
+    background-color: rgba(98, 105, 98, 0.2);
   }
 }

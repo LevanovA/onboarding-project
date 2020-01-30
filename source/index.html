@@ -56,7 +56,7 @@
       <section class="promo">
         <h1 class="promo__headline">Печатные платы</h1>
         <p class="promo__call">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="button button--promo" href="#feedback__link"><span class="button--promo-desktop">Получить бесплатную консультацию</span><span class="button--promo-mobile">Бесплатная консультация</span></a>
+        <a class="button button--promo" href="#feedback__link"><span class="promo__desktop">Получить бесплатную консультацию</span><span class="promo__mobile">Бесплатная консультация</span></a>
         <a class="promo__scroll" href="#page-main__advantages">Скролл вниз</a>
       </section>
     </div>
@@ -168,7 +168,7 @@
           <p>Мы проконсультируем Вас бесплатно</p>
           <form class="feedback__form" action="#" method="POST">
             <div class="feedback__item feedback__item--name">
-              <input type="text" placeholder="Имя"  id="feedbackName">
+              <input type="text" placeholder="Имя">
             </div>
             <div class="feedback__item feedback__item--tel">
               <input type="tel" placeholder="Телефон">
@@ -177,7 +177,7 @@
               <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
             </div>
             <div class="feedback__submit">
-              <input type="button" value="Задать вопрос">
+              <input type="submit" value="Задать вопрос">
               <div class="feedback__agree">
                 <input type="checkbox" name="agree" id="agree" class="visually-hidden" checked>
                 <label for="agree">Я согласен на обработку персональных данных</label>
@@ -221,6 +221,7 @@
             </div>
           </ul>
         </nav>
+        <hr class="page-footer__line">
         <section class="address toggle--closed">
           <h3>Наш офис</h3>
           <button class="toggle toggle--address" type="button"><span class="visually-hidden">Открыть адрес и телефоны</span></button>
@@ -261,7 +262,7 @@
           <label for="modal__agree">Я согласен на обработку персональных данных</label>
         </div>
       </form>
-      <button class="modal__button" type="button"></button>
+      <button class="modal__button" type="submit"></button>
     </div>
   </section>
   <div class="overlay overlay--closed"></div>

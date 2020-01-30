@@ -44,10 +44,6 @@
   }
 }
 
-.button--promo-mobile {
-  display: none;
-}
-
 .button--about {
   display: block;
   color: $complementary-color;
@@ -80,13 +76,5 @@
   .button--promo {
     width: 90vw;
     margin: 0;
-  }
-
-  .button--promo-mobile {
-    display: inline;
-  }
-
-  .button--promo-desktop {
-    display: none;
   }
 }

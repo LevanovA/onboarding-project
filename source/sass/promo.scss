@@ -59,6 +59,10 @@
   }
 }
 
+.promo__mobile {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
 
   .promo {
@@ -130,5 +134,13 @@
       left: -47px;
       top: 14px;
     }
+  }
+
+  .promo__mobile {
+    display: inline;
+  }
+
+  .promo__desktop {
+    display: none;
   }
 }
