@@ -1,7 +1,7 @@
 .about {
   display: flex;
   justify-content: space-between;
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .about__container {
-  width: 1070px;
+  max-width: 1070px;
 }
 
 .about__headline {
