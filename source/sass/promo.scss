@@ -1,5 +1,5 @@
 .promo {
-  max-width: 1494px;
+  max-width: 1580px;
   padding-top: 58px;
   padding-bottom: 25px;
   background-image: url(../img/promo-desktop.png), url(../img/promo-polygon-desktop.png);
@@ -19,6 +19,7 @@
   color: $main-color;
   margin: 0;
   margin-bottom: 26px;
+  margin-left: 85px;
 }
 
 .promo__call {
@@ -29,7 +30,7 @@
   color: $main-color;
   width: 683px;
   margin: 0;
-  margin-left: 95px;
+  margin-left: 184px;
   margin-bottom: 43px;
 
   &::before {
@@ -51,7 +52,7 @@
   line-height: 16px;
   color: $main-color;
   opacity: 0.5;
-  margin-left: -36px;
+  margin-left: 51px;
   transform: rotate(-90deg);
 
   &:hover {
@@ -69,7 +70,7 @@
     background-image: url(../img/promo-tablet.png), url(../img/promo-polygon-tablet.png);
     background-repeat: no-repeat, no-repeat;
     background-position-x: right;
-    background-position-y: 31px,-81px;
+    background-position-y: 40px,-72px;
     max-width: 1023px;
     padding-top: 108px;
   }
@@ -80,7 +81,8 @@
     width: 470px;
     margin: 0;
     margin-bottom: 28px;
-    margin-left: 63px;
+    margin-left: 89px;
+    margin-top: 9px;
   }
 
   .promo__call {
@@ -88,7 +90,7 @@
     line-height: 28px;
     width: 356px;
     margin: 0;
-    margin-left: 113px;
+    margin-left: 140px;
     margin-bottom: 55px;
 
     &::before {
@@ -119,6 +121,7 @@
     width: 277px;
     margin: 0;
     margin-bottom: 28px;
+    margin-left: 15px;
   }
 
   .promo__call {
@@ -126,7 +129,7 @@
     line-height: 24px;
     width: 245px;
     margin: 0;
-    margin-left: 49px;
+    margin-left: 67px;
     margin-bottom: 42px;
 
     &::before {

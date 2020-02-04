@@ -7,9 +7,12 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  max-width: 1412px;
+  max-width: 1472px;
   margin: 0 auto;
-  padding-bottom: 55px;
+  padding-bottom: 57px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
 }
 
 .page-footer__container {
@@ -25,12 +28,14 @@
 @media (max-width: $tablet-width) {
 
   .page-footer {
-    padding-top: 20px;
+    padding-top: 19px;
   }
 
   .page-footer__box {
     flex-wrap: wrap;
     max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 36px;
   }
 

@@ -57,6 +57,7 @@
   margin-bottom: 40px;
   background-color: #19baff;
   border: none;
+  border-radius: 0;
   outline: none;
 
   &::placeholder {
@@ -82,9 +83,10 @@
   box-sizing: border-box;
   padding-left: 17px;
   padding-top: 13px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   background-color: #19baff;
   border: none;
+  border-radius: 0;
   outline: none;
   resize: none;
 
@@ -105,12 +107,14 @@
   line-height: 16px;
   color: $main-color;
   letter-spacing: 0.05em;
+  padding: 0;
   background-color: rgba(27, 45, 55, 0);
   border: 1px solid $main-color;
   box-sizing: border-box;
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     color: $complementary-color;
@@ -174,21 +178,21 @@
 
   .feedback__box {
     justify-content: center;
-    width: 590px;
+    width: 591px;
   }
 
   .feedback__container {
-    width: 590px;
+    width: 591px;
   }
 
   .feedback__container h2 {
     font-size: 32px;
     line-height: 44px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
   }
 
   .feedback__container p {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   .feedback__item input {
@@ -200,8 +204,12 @@
     margin-bottom: 44px;
   }
 
-  .feedback__form input[type="button"] {
+  .feedback__form input[type="submit"] {
     width: 280px;
+  }
+
+  .feedback__agree {
+    width: 235px;
   }
 }
 
@@ -237,7 +245,7 @@
 
   .feedback__comment textarea {
     height: 104px;
-    margin-bottom: 27px;
+    margin-bottom: 22px;
   }
 
   .feedback__agree {
@@ -248,7 +256,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .feedback__form input[type="button"] {
+  .feedback__form input[type="submit"] {
     min-width: 290px;
     margin-bottom: 24px;
   }

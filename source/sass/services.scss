@@ -1,6 +1,6 @@
 .services {
   padding-top: 90px;
-  padding-bottom: 127px;
+  padding-bottom: 107px;
   background-color: #1B2D37;
 }
 
@@ -22,21 +22,30 @@
 .services__box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .services__item {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 370px;
+  width: calc((100% / 3) - 20px);
   height: 620px;
   text-decoration: none;
   margin-bottom: 20px;
 }
 
+.services__item:nth-child(3n+2) {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .services__item img {
+  position: absolute;
+  top: 0;
   opacity: 0.2;
+  width: 100%;
 }
 
 .services__name {
@@ -47,7 +56,6 @@
   width: 160px;
   margin-left: 45px;
   margin-top: 50px;
-  margin-bottom: -130px;
 }
 
 .services__button {
@@ -55,7 +63,6 @@
   align-self: flex-end;
   width: 63px;
   height: 63px;
-  margin-top: -87px;
   background-color: $complementary-color;
 
   &::before {
@@ -98,13 +105,22 @@
   }
 
   .services__item {
-    width: 715px;
+    width: 720px;
     height: 256px;
     margin-bottom: 45px;
   }
 
+  .services__item--component p {
+    margin-top: 52px;
+  }
+
+  .services__item:nth-child(3n+2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .services__item img {
-    width: 715px;
+    width: 720px;
     height: 256px;
   }
 
@@ -132,6 +148,7 @@
     font-size: 28px;
     line-height: 40px;
     margin-bottom: 40px;
+    margin-left: 10px;
   }
 
   .services__item {
@@ -140,13 +157,17 @@
     margin-bottom: 30px;
   }
 
+  .services__item--component p {
+    margin-top: 27px;
+  }
+
   .services__item img{
     width: 290px;
     height: 256px;
   }
 
   .services__name {
-    margin-left: 30px;
+    margin-left: 36px;
     margin-top: 20px;
     margin-right: -220px;
   }

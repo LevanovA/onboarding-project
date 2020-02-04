@@ -8,19 +8,24 @@
 }
 
 .page-header__box {
-  max-width: 1494px;
+  max-width: 1650px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
 }
 
 @media (max-width: $tablet-width) {
 
   .page-header {
+    padding-top: 24px;
     padding-bottom: 137px;
   }
 
   .page-header__box {
-    max-width: 1023;
-    margin-left: 100vw * 0.04;
+    max-width: 1023px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -32,6 +37,5 @@
 
   .page-header__box {
     max-width: 766px;
-    margin-left: 100vw * 0.05;
   }
 }

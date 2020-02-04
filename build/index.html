@@ -48,8 +48,8 @@
           </picture>
         </a>
         <div class="info__contact">
-          <p class="info__email"><a href="mailto:info@sd.ru" class="info__email-img"></a><span class="info__email-text">info@sd.ru</span></p>
-          <p class="info__phone"><a href="tel:+74950005252" class="info__phone-img"></a><span class="info__phone-number">+7 (495) 000 52 52</span></p>
+          <a href="mailto:info@sd.ru" class="info__email"><span class="info__email-img"></span><span class="info__email-text">info@sd.ru</span></a>
+          <a href="tel:+74950005252" class="info__phone"><span class="info__phone-img"></span><span class="info__phone-number">+7 (495) 000 52 52</span></a>
           <button class="button button--info" type="button">Заказать звонок</button>
         </div>
       </section>
@@ -73,7 +73,7 @@
           </div>
           <h3 class="advantages__headline">Оперативные сроки</h3>
           <p class="advantages__description advantages__description--deadlines">Усовершенствованная логистическая система
-            позволяет нам просчитывать<span class="advantages__nbspace">&nbsp</span> стоимость, производить
+            позволяет нам просчитывать<span class="advantages__nbspace">&nbsp;</span> стоимость, производить
             и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </div>
         <div class="advantages__item">
@@ -104,7 +104,7 @@
           </div>
           <h3 class="advantages__headline">Персонализация стоимости</h3>
           <p class="advantages__description advantages__description--cost">Мы подбираем определенную фабрику, поставщиков,
-            вид доставки, чтобы установить<span class="advantages__nbspace">&nbsp</span> ту цену, которая
+            вид доставки, чтобы установить<span class="advantages__nbspace">&nbsp;</span> ту цену, которая
             Вас устраивает.</p>
         </div>
       </section>
@@ -114,11 +114,11 @@
           <h2 class="about__headline">О компании</h2>
           <div class="about__box">
             <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии
-              с<span class="about__space"> </span><span class="about__nbspace">&nbsp</span>1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+              с<span class="about__space"> </span><span class="about__nbspace">&nbsp;</span>1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
             </p>
             <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
               Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__ellipsis">..</span>
-              (РЖД),&nbspРоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
+              (РЖД),&nbsp;РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
               Производители светотехники России.
             </p>
           </div>
@@ -128,7 +128,7 @@
     </div>
     <section class="services">
       <div class="services__container">
-        <h2 class="services__headline">Service Device предлагает следующие товары и&nbspуслуги</h2>
+        <h2 class="services__headline">Service Device предлагает следующие товары и&nbsp;услуги</h2>
         <div class="services__box">
           <a class="services__item services__item--production" href="#">
             <p class="services__name">Производство печатных плат</p>
@@ -168,13 +168,16 @@
           <p>Мы проконсультируем Вас бесплатно</p>
           <form class="feedback__form" action="#" method="POST">
             <div class="feedback__item feedback__item--name">
-              <input type="text" placeholder="Имя">
+              <input type="text" name="name" id="feedback__name" placeholder="Имя" required="">
+              <label for="feedback__name" class="visually-hidden">Введите имя</label>
             </div>
             <div class="feedback__item feedback__item--tel">
-              <input type="tel" placeholder="Телефон">
+              <input type="tel" name="tel" id="feedback__tel" placeholder="Телефон" required="">
+              <label for="feedback__tel" class="visually-hidden">Введите телефон</label>
             </div>
             <div class="feedback__comment">
-              <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+              <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Ваш вопрос" required=""></textarea>
+              <label for="comment" class="visually-hidden">Введите комментарий</label>
             </div>
             <div class="feedback__submit">
               <input type="submit" value="Задать вопрос">
@@ -197,39 +200,39 @@
           </a>
           <p>1999-2018 SD Service Devices</p>
           <div class="social__box">
-            <a href="#" class="social__icon social__icon--fb"></a>
-            <a href="#" class="social__icon social__icon--od"></a>
-            <a href="#" class="social__icon social__icon--vk"></a>
+            <a href="#" class="social__icon social__icon--fb"><span class="visually-hidden">Перейти на фейсбук</span></a>
+            <a href="#" class="social__icon social__icon--od"><span class="visually-hidden">Перейти на одноклассники</span></a>
+            <a href="#" class="social__icon social__icon--vk"><span class="visually-hidden">Перейти на вконтакте</span></a>
           </div>
         </div>
       </section>
       <div class="page-footer__container">
-        <nav class="footer-menu toggle--closed">
+        <nav class="footer-menu footer-menu--closed">
           <h3>Разделы сайта</h3>
-          <button class="toggle toggle--menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul>
-            <div class="footer-menu__box">
-              <li>О компании</li>
-              <li>Продукты</li>
-              <li>Производство печатных плат</li>
-              <li>Монтаж печатных плат</li>
-            </div>
-            <div class="footer-menu__box">
-              <li>Комплектующие</li>
-              <li>Доставка</li>
-              <li>Контакты</li>
-            </div>
-          </ul>
+          <button class="toggle toggle--menu toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="footer-menu__list">
+            <ul class="footer-menu__box">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Продукты</a></li>
+              <li><a href="#">Производство печатных плат</a></li>
+              <li><a href="#">Монтаж печатных плат</a></li>
+            </ul>
+            <ul class="footer-menu__box">
+              <li><a href="#">Комплектующие</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
         </nav>
         <hr class="page-footer__line">
-        <section class="address toggle--closed">
+        <section class="address address--closed">
           <h3>Наш офис</h3>
-          <button class="toggle toggle--address" type="button"><span class="visually-hidden">Открыть адрес и телефоны</span></button>
+          <button class="toggle toggle--address toggle--closed" type="button"><span class="visually-hidden">Открыть адрес и телефоны</span></button>
           <ul>
             <li>г. Мытищи, Олимпийский проспект, д.10</li>
-            <li>+7 (495) 589-40-50</li>
-            <li>+7 (925) 003-87-67</li>
-            <li>+7 (926) 926-080-79</li>
+            <li><a href="tel:+7495894050">+7 (495) 589-40-50</a></li>
+            <li><a href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+            <li><a href="tel:+792692608079">+7 (926) 926-080-79</a></li>
           </ul>
         </section>
       </div>
@@ -237,6 +240,7 @@
     <section class="rights">
       <div class="rights__box">
         <p>Все права защищены</p>
+        <p>1999-2018 SD Service Devices</p>
         <p>Условия конфиденциальности</p>
         <p>Developed by wow studio</p>
       </div>
@@ -248,22 +252,25 @@
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="modal__form" action="#">
         <div class="modal__item modal__item--name">
-          <input type="text" placeholder="Имя">
+          <input type="text" name="name" id="modal__name" placeholder="Имя" required="">
+          <label for="modal__name" class="visually-hidden">Введите имя</label>
         </div>
         <div class="modal__item modal__item--tel">
-          <input type="tel" placeholder="Телефон">
+          <input type="tel" name="tel" id="modal__tel" placeholder="Телефон" required="">
+          <label for="modal__tel" class="visually-hidden">Введите телефон</label>
         </div>
         <div class="modal__comment">
-          <textarea name="modal__comment" id="modal__comment" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+          <textarea name="modal__comment" id="modal__comment" cols="30" rows="10" placeholder="Ваш вопрос" required=""></textarea>
+          <label for="modal__comment" class="visually-hidden">Введите комментарий</label>
         </div>
-        <input type="button" value="Отправить">
+        <input type="submit" value="Отправить">
         <div class="modal__agree">
           <input type="checkbox" name="modal__agree" id="modal__agree" class="visually-hidden" checked="">
           <label for="modal__agree">Я согласен на обработку персональных данных</label>
         </div>
       </form>
-      <button class="modal__button" type="submit"></button>
     </div>
+    <button class="modal__button" type="button"><span class="visually-hidden">Закрыть окно</span></button>
   </section>
   <div class="overlay overlay--closed"></div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

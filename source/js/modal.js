@@ -7,6 +7,7 @@
   var buttonOpen = document.querySelector('.button--info');
   var fieldName = document.querySelector('.modal__item input[type="text"]');
   var overlay = document.querySelector('.overlay');
+  var bodyPage = document.body;
 
   var onOpenPopup = function () {
     modal.classList.remove('modal--closed');
@@ -15,6 +16,7 @@
     overlay.classList.add('overlay--opened');
     document.addEventListener('keydown', onPopupEscPress);
     fieldName.focus();
+    bodyPage.style.overflow = 'hidden';
   };
 
   var closePopup = function () {
@@ -23,6 +25,7 @@
     overlay.classList.add('overlay--closed');
     overlay.classList.remove('overlay--opened');
     document.removeEventListener('keydown', onPopupEscPress);
+    bodyPage.style.overflow = '';
   };
 
   var onPopupEscPress = function (evt) {

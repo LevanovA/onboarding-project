@@ -13,23 +13,28 @@
   margin-bottom: 25px;
 }
 
-.footer-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.footer-menu__list {
   display: flex;
 }
 
-.footer-menu li {
+.footer-menu li a {
   font-family: "PTMono", Arial, sans-serif;
   font-size: 15px;
   line-height: 25px;
   color: #1B2D37;
   opacity: 0.5;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.2;
+  }
 }
 
 .footer-menu__box {
- margin-right: 76px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 76px;
 }
 
 @media (max-width: $tablet-width) {
@@ -38,7 +43,7 @@
     margin-left: 0;
   }
 
-  .footer-menu ul {
+  .footer-menu__list {
     display: block;
   }
 }
@@ -58,9 +63,16 @@
     margin-bottom: 27px;
   }
 
-  .footer-menu ul {
+  .footer-menu__list {
     max-width: 290px;
     margin: 0 auto;
-    padding-bottom: 27px;
+  }
+
+  .footer-menu--closed ul {
+    display: none;
+  }
+
+  .footer-menu--opened ul {
+    display: block;
   }
 }

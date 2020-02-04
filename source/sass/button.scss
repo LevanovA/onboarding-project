@@ -11,12 +11,14 @@
   box-sizing: border-box;
   border-radius: 5px;
   text-transform: uppercase;
+  outline: none;
   cursor: pointer;
 }
 
 .button--info {
-  margin-left: 2.6vw;
+  margin-left: 50px;
   margin-top: 3px;
+  outline: none;
 
   &:hover {
     color: $complementary-color;
@@ -32,7 +34,7 @@
   height: 55px;
   text-decoration: none;
   text-align: center;
-  margin-left: 94px;
+  margin-left: 184px;
   margin-bottom: 130px;
   padding-top: 17px;
   border: none;
@@ -66,7 +68,7 @@
 
   .button--promo {
     width: 379px;
-    margin-left: 113px;
+    margin-left: 140px;
     margin-bottom: 0;
   }
 }
@@ -74,7 +76,7 @@
 @media (max-width: $mobile-width) {
 
   .button--promo {
-    width: 90vw;
-    margin: 0;
+    width: 290px;
+    margin: 0 auto;
   }
 }

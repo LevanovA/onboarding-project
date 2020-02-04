@@ -16,7 +16,7 @@
     outline: none;
   }
 
-  .toggle--closed  .toggle::before {
+  .toggle--closed::before {
     content: "";
     position: absolute;
     width: 16px;
@@ -25,17 +25,5 @@
     left: 0;
     background-color: #C4C4C4;
     transform: rotate(90deg);
-  }
-
-  .toggle--opened  .toggle::before {
-    display: none;
-  }
-
-  .toggle--opened ul {
-    display: block;
-  }
-
-  .toggle--closed ul {
-    display: none;
   }
 }

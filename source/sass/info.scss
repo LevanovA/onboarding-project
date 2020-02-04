@@ -1,10 +1,12 @@
 .info {
   display: flex;
+  justify-content: space-between;
   font-family: "PTMono", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: $main-color;
-  max-width: 1415px;
+  max-width: 1411px;
+  margin: 0 auto;
   margin-bottom: 173px;
 }
 
@@ -15,16 +17,18 @@
 .info__contact {
   display: flex;
   justify-content: space-between;
-  margin-left: 74vw * 0.39;
 }
 
-.info__email {
+.info__email,
+.info__phone {
   display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $main-color;
 }
 
 .info__phone {
-  display: flex;
-  margin-left: 74vw * 0.06;
+  margin-left: 88px;
 }
 
 .info__email-img {
@@ -53,6 +57,7 @@
     justify-content: space-between;
     max-width: 94vw;
     margin-bottom: 4px;
+    margin: 0 auto;
   }
 
   .info__email-img {
@@ -87,8 +92,10 @@
 @media (max-width: $mobile-width) {
 
   .info {
-    max-width: 90vw;
-    margin-bottom: 0;
+    max-width: 766px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .info__logo-picture {
@@ -102,8 +109,11 @@
     margin-left: 7vw;
   }
 
-  .info__email {
-    margin: 0;
-    margin-top: 7px;
+  .info__phone-img {
+    margin-top: -25px;
+  }
+
+  .info__email-img {
+    margin-top: -20px;
   }
 }

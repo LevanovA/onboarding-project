@@ -1,14 +1,17 @@
 .rights {
   border-top: 1px solid rgba(98, 105, 98, 0.2);
-  padding-top: 17px;
+  padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .rights__box {
   display: flex;
   justify-content: space-between;
-  max-width: 1412px;
+  max-width: 1472px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
 }
 
 .rights__box p {
@@ -21,6 +24,10 @@
   margin: 0;
 }
 
+.rights__box p:nth-child(3) {
+  width: 37%;
+}
+
 @media (max-width: $tablet-width) {
 
   .rights {
@@ -30,10 +37,17 @@
 
   .rights__box {
     max-width: 720px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .rights__box p:first-child {
+  .rights__box p:first-child,
+  .rights__box p:nth-child(2) {
     display: none;
+  }
+
+  .rights__box p:nth-child(3) {
+    width: 50%;
   }
 }
 
@@ -53,5 +67,9 @@
   .rights__box p {
     text-align: center;
     margin-bottom: 21px;
+  }
+
+  .rights__box p:nth-child(3) {
+    width: 100%;
   }
 }

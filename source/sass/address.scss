@@ -23,6 +23,21 @@
   opacity: 0.5;
 }
 
+.address li a {
+  color: #1B2D37;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.2;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .address {
+    width: 343px;
+  }
+}
+
 @media (max-width: $mobile-width) {
 
   .address {
@@ -46,5 +61,13 @@
 
   .address li:first-child {
     width: 200px;
+  }
+
+  .address--closed ul {
+    display: none;
+  }
+
+  .address--opened ul {
+    display: block;
   }
 }
