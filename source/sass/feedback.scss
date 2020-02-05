@@ -67,6 +67,10 @@
     color: $main-color;
     opacity: 1;
   }
+
+  &:invalid {
+    box-shadow: none;
+  }
 }
 
 .feedback__comment {
@@ -96,6 +100,10 @@
     line-height: 22px;
     color: $main-color;
     opacity: 1;
+  }
+
+  &:invalid {
+    box-shadow: none;
   }
 }
 

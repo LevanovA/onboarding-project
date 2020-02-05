@@ -75,13 +75,18 @@
     padding-top: 108px;
   }
 
+  .promo__box {
+    width: 720px;
+    margin: 0 auto;
+  }
+
   .promo__headline {
     font-size: 60px;
     line-height: 70px;
     width: 470px;
     margin: 0;
     margin-bottom: 28px;
-    margin-left: 89px;
+    margin-left: 63px;
     margin-top: 9px;
   }
 
@@ -90,7 +95,7 @@
     line-height: 28px;
     width: 356px;
     margin: 0;
-    margin-left: 140px;
+    margin-left: 113px;
     margin-bottom: 55px;
 
     &::before {
@@ -115,13 +120,18 @@
     padding-top: 217px;
   }
 
+  .promo__box {
+    width: 290px;
+    margin: 0 auto;
+  }
+
   .promo__headline {
     font-size: 40px;
     line-height: 47px;
     width: 277px;
     margin: 0;
     margin-bottom: 28px;
-    margin-left: 15px;
+    margin-left: 0;
   }
 
   .promo__call {
@@ -129,7 +139,7 @@
     line-height: 24px;
     width: 245px;
     margin: 0;
-    margin-left: 67px;
+    margin-left: 51px;
     margin-bottom: 42px;
 
     &::before {

@@ -55,7 +55,7 @@
 
   .info {
     justify-content: space-between;
-    max-width: 94vw;
+    max-width: 720px;
     margin-bottom: 4px;
     margin: 0 auto;
   }
@@ -92,10 +92,7 @@
 @media (max-width: $mobile-width) {
 
   .info {
-    max-width: 766px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 290px;
   }
 
   .info__logo-picture {
