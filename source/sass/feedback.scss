@@ -2,21 +2,32 @@
   padding-top: 91px;
   padding-bottom: 113px;
   background-color: $complementary-color;
-  background-image: url(../img/feedback-plane-desktop.png), url(../img/feedback-polygon-desktop.png);
+  background-image: url(../img/feedback-polygon-desktop.png);
   background-repeat: no-repeat;
-  background-position-x: 342px, 167px;
-  background-position-y: 161px, -60px;
+  background-position-x: 167px;
+  background-position-y: -60px;
 }
 
 .feedback__box {
   display: flex;
-  justify-content: flex-end;
-  max-width: 1170px;
+  justify-content: space-between;
+  max-width: 1220px;
   margin: 0 auto;
+}
+
+.feedback__plane {
+  width: 511px;
+  background-image: url(../img/feedback-plane-desktop.png);
+  background-repeat: no-repeat;
+  background-position-y: 70px;
+  background-size: contain;
 }
 
 .feedback__container {
   width: 570px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 25px;
 }
 
 .feedback__container h2 {

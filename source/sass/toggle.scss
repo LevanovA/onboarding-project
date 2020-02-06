@@ -11,19 +11,15 @@
     height: 1px;
     top: 34px;
     right: 0;
-    background-color: #C4C4C4;
+    background-image: url('../img/minus.svg');
+    background-color: transparent;
     border: none;
     outline: none;
   }
 
-  .toggle--closed::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 2px;
-    top: 0;
-    left: 0;
-    background-color: #C4C4C4;
-    transform: rotate(90deg);
+  .toggle--closed {
+    height: 16px;
+    top: 27px;
+    background-image: url('../img/plus.svg');
   }
 }
